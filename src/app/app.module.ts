@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
@@ -54,6 +55,7 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     MatCardModule,
     MatButtonModule,
+    MatProgressSpinnerModule,
     FlexLayoutModule,
     MatDialogModule,
     MatFormFieldModule, 
