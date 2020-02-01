@@ -24,6 +24,7 @@ import { MatSliderModule  } from '@angular/material';
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
+import { ProcessHTTPMsgServiceService } from './services/process-httpmsg-service.service';
 
 import { LoginComponent } from './login/login.component';
 import { AppComponent } from './app.component';
@@ -72,7 +73,7 @@ import { baseURL } from './shared/baseurl';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [DishService, PromotionService, LeaderService, {provide: 'BaseURL', useValue: baseURL}],
+  providers: [DishService, PromotionService, LeaderService, ProcessHTTPMsgServiceService, {provide: 'BaseURL', useValue: baseURL}],
   entryComponents: [
     LoginComponent
   ],
