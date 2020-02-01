@@ -35,6 +35,9 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { baseURL } from './shared/baseurl';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,9 +69,10 @@ import { ContactComponent } from './contact/contact.component';
     MatSelectModule,
     MatSlideToggleModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [DishService, PromotionService, LeaderService],
+  providers: [DishService, PromotionService, LeaderService, {provide: 'BaseURL', useValue: baseURL}],
   entryComponents: [
     LoginComponent
   ],
