@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
+# Project setup
+
+After cloning this repo do npm i and also explicitly install json-server package globally and run the folder present in the root directory because it is gonna use as a data source.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
